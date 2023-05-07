@@ -11,7 +11,7 @@ WORKDIR /code
 RUN pip install --upgrade pip
 COPY requirements.txt /code/
 RUN apt-get update && apt-get install -y python3-pip
-RUN pip install -r requirements.txt
+RUN pip install -r requirements
 
 # copy project
 COPY . /code/
